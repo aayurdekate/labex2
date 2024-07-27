@@ -1,0 +1,352 @@
+/* General Styles */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    width: 90%;
+    margin-inline: auto;
+}
+
+header, footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Hero Section */
+.hero .jumbotron {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero .jumbotron .container {
+    max-width: 600px;
+}
+
+.hero .jumbotron h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .jumbotron a {
+    font-size: 1.25rem;
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+.hero .jumbotron a:hover {
+    background-color: #0056b3;
+}
+
+/* Gallery */
+.gallery .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery .grid-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery .grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Forms */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* About and Services Sections */
+section {
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Flexbox for About and Services */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 1 1 45%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f0f0f0;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 1.5rem;
+}
+
+.testimonials .testimonial p {
+    font-style: italic;
+}
+
+.testimonials .testimonial span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Featured Work */
+
+    img{
+        max-width: 100%;
+        display: block;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 5rem;
+    }
+/* featured ends */
+
+
+.box {
+    background-color: #ccc;
+    height: 100px;
+}
+
+/* Portfolio Highlights */
+.portfolio-highlights .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-highlights .category {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.portfolio-highlights .category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 1rem;
+}
+
+.call-to-action a {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Latest News & Blog */
+.latest-news {
+    padding: 2rem 1rem;
+}
+
+.latest-news .news-item {
+    margin-bottom: 1.5rem;
+}
+
+.latest-news .news-item h3 a {
+    color: #007bff;
+}
+
+.latest-news .news-item h3 a:hover {
+    color: #0056b3;
+}
+
+/* Social Media */
+.social-media {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-media .social-link {
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.social-media .social-link:hover {
+    color: #0056b3;
+}
+
+/* Parallax Section */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.parallax .content {
+    max-width: 600px;
+}
+
+/* Interactive Map */
+.location {
+    padding: 2rem 1rem;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .jumbotron p {
+        font-size: 1.25rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        flex: 1 1 100%;
+        margin: 1rem 0;
+    }
+
+    .gallery .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-highlights .categories {
+        flex-direction: column;
+    }
+
+    .portfolio-highlights .category {
+        flex: 1 1 100%;
+        margin: 1rem 0;
+    }
+}
